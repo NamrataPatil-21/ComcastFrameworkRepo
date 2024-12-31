@@ -14,11 +14,24 @@ public class HomePage {
 	@FindBy(linkText = "Organizations")
 	private WebElement organizationLink;
 
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
+	
+	public WebElement getProductLink() {
+		return productLink;
+	}
+
+	public void setProductLink(WebElement productLink) {
+		this.productLink = productLink;
+	}
+
 	@FindBy(linkText = "Contacts")
 	private WebElement contactLink;
 	
 	@FindBy(linkText = "Campaigns")
 	private WebElement campaignLink;
+	
+	
 	
 	@FindBy(linkText = "More")
 	private WebElement moreLink;
